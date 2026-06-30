@@ -278,15 +278,16 @@ h1 .go{color:var(--accent);text-shadow:0 0 42px rgba(225,6,0,.45)}
 .vs{display:flex;align-items:center;justify-content:center;font-family:'Archivo',sans-serif;font-weight:900;font-size:26px;color:var(--accent)}
 
 /* ---------- timeline ---------- */
-.tline{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;position:relative}
-@media(max-width:920px){.tline{grid-template-columns:1fr}}
+.tline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:44px;position:relative}
+@media(max-width:1080px){.tline{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+@media(max-width:560px){.tline{grid-template-columns:1fr}}
 .tline::before{content:"";position:absolute;top:-26px;left:4%;right:4%;height:2px;background:linear-gradient(90deg,var(--accent),var(--line));
 }
-@media(max-width:920px){.tline::before{display:none}}
-.tcard{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:36px 30px;position:relative;transition:transform .35s ease,border-color .35s ease}
+@media(max-width:1080px){.tline::before{display:none}}
+.tcard{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px 26px;position:relative;transition:transform .35s ease,border-color .35s ease}
 .tcard:hover{transform:translateY(-6px);border-color:var(--accent)}
 .tcard::before{content:"";position:absolute;top:-32px;left:50%;width:12px;height:12px;border-radius:50%;background:var(--accent);transform:translateX(-50%);box-shadow:0 0 16px rgba(225,6,0,.8)}
-@media(max-width:920px){.tcard::before{display:none}}
+@media(max-width:1080px){.tcard::before{display:none}}
 .tcard .yr{font-family:'Archivo','Noto Sans TC',sans-serif;font-weight:900;font-size:clamp(34px,3.4vw,44px);color:var(--accent);white-space:nowrap}
 .tcard .ph{font-weight:700;font-size:19px;margin:6px 0 18px}
 .tcard ul{list-style:none}
@@ -760,26 +761,35 @@ footer{padding:34px 6vw;border-top:1px solid var(--line);display:flex;justify-co
     <h2 class="rv d1">預估推進時程</h2>
     <div class="tline">
       <div class="tcard rv d1">
-        <div class="yr">2026/7</div>
-        <div class="ph">啟動＋籌備</div>
+        <div class="yr">2026 下半年</div>
+        <div class="ph">啟動籌備（現在進行）</div>
         <ul>
           <li>公司設立</li>
           <li>品牌建立</li>
           <li>場館簽約</li>
           <li>中央＋地方政府接洽</li>
+          <li>招商啟動</li>
         </ul>
       </div>
       <div class="tcard rv d2">
-        <div class="yr">2027/10</div>
-        <div class="ph">首屆</div>
+        <div class="yr">2026–27</div>
+        <div class="ph">製作衝刺</div>
         <ul>
-          <li>招商啟動</li>
+          <li>招商深化</li>
           <li>節目開發</li>
           <li>早鳥票開賣</li>
-          <li>10 月中下旬首屆開展</li>
+          <li>展務與動線定案</li>
         </ul>
       </div>
       <div class="tcard rv d3">
+        <div class="yr">2027/10</div>
+        <div class="ph">首屆開展</div>
+        <ul>
+          <li>10 月 8、9、10 日</li>
+          <li>三天首屆 CarGo Salon</li>
+        </ul>
+      </div>
+      <div class="tcard rv d4">
         <div class="yr">2028–29</div>
         <div class="ph">成長</div>
         <ul>
@@ -790,7 +800,7 @@ footer{padding:34px 6vw;border-top:1px solid var(--line);display:flex;justify-co
         </ul>
       </div>
     </div>
-    <p class="note rv" style="margin-top:40px">2026 年 7 月啟動 → 2027 年 10 月首屆開展｜<b>16 個月執行週期</b></p>
+    <p class="note rv" style="margin-top:40px">2026 下半年啟動籌備 → 2027 年 10 月 8 至 10 日首屆開展｜<b>約 16 個月執行週期</b></p>
   </div>
 </section>
 
